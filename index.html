@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hangman</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body onload="reloadLetters()">
+    <header>
+        <h1>Hangman</h1>
+    </header>
+    <main>
+        <article>
+            <h2>Välkommen till spelet Hänga gubbe!</h2>
+            <p>När du trycker på "Starta spelet", kommer datorn att välja ett ord slumpmässigt. <br>
+               Ditt mål är att gissa ordet genom att trycka på bokstavsknapparna.<br>
+               För varje bokstav du gissar rätt, dyker bokstaven upp i rutan för motsvarande plats i ordet.<br>
+               För varje gissning som är fel, dyker en del av en bild upp som till slut bildar en "hängd" gubbe. <br>
+               Spelet är över om gubben blir "hängd" innan du hinner gissa rätt.<br>
+               Lycka till!
+            </p>
+        </article>
+        <button class="btn btn--stripe" type="button" id="startGameBtn">Starta spelet</button>
+        <section id="gameBoard">
+            <ul id="letterButtons">
+                <li><button class="btn btn--stripe" type="button" value="A">A</button></li>
+                <li><button class="btn btn--stripe" type="button" value="B">B</button></li>
+                <li><button class="btn btn--stripe" type="button" value="C">C</button></li>
+                <li><button class="btn btn--stripe" type="button" value="D">D</button></li>
+                <li><button class="btn btn--stripe" type="button" value="E">E</button></li>
+                <li><button class="btn btn--stripe" type="button" value="F">F</button></li>
+                <li><button class="btn btn--stripe" type="button" value="G">G</button></li>
+                <li><button class="btn btn--stripe" type="button" value="H">H</button></li>
+                <li><button class="btn btn--stripe" type="button" value="I">I</button></li>
+                <li><button class="btn btn--stripe" type="button" value="J">J</button></li>
+                <li><button class="btn btn--stripe" type="button" value="K">K</button></li>
+                <li><button class="btn btn--stripe" type="button" value="L">L</button></li>
+                <li><button class="btn btn--stripe" type="button" value="M">M</button></li>
+                <li><button class="btn btn--stripe" type="button" value="N">N</button></li>
+                <li><button class="btn btn--stripe" type="button" value="O">O</button></li>
+                <li><button class="btn btn--stripe" type="button" value="P">P</button></li>
+                <li><button class="btn btn--stripe" type="button" value="Q">Q</button></li>
+                <li><button class="btn btn--stripe" type="button" value="R">R</button></li>
+                <li><button class="btn btn--stripe" type="button" value="S">S</button></li>
+                <li><button class="btn btn--stripe" type="button" value="T">T</button></li>
+                <li><button class="btn btn--stripe" type="button" value="U">U</button></li>
+                <li><button class="btn btn--stripe" type="button" value="V">V</button></li>
+                <li><button class="btn btn--stripe" type="button" value="W">W</button></li>
+                <li><button class="btn btn--stripe" type="button" value="X">X</button></li>
+                <li><button class="btn btn--stripe" type="button" value="Y">Y</button></li>
+                <li><button class="btn btn--stripe" type="button" value="Z">Z</button></li>
+                <li><button class="btn btn--stripe" type="button" value="Å">Å</button></li>
+                <li><button class="btn btn--stripe" type="button" value="Ä">Ä</button></li>
+                <li><button class="btn btn--stripe" type="button" value="Ö">Ö</button></li>
+            </ul>
+            <section id="letterBoxes">
+                <!-- This is where the matched letters should appear, these should match the number of letters in the selected word -->
+                <ul>
+
+                </ul>
+            </section>
+            <section id="message">
+                <!-- This is where messages should appear -->
+            </section>
+            <div class="image">
+            <img id="hangman" src="./images/0.svg" alt="hangman">
+            </div>
+        </section>
+    </main>
+    <footer>
+        Isabelle Johannesson - Hangman
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
